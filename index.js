@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Bonjour', 'tu sais quoi ??', "j'apprend à coder"], 'text',['tomato','rebeccapurple','lightblue']);
+consoleText(['Bonjour', "je suis L'intelligence artificiel de Mr Cem", "je répond à toutes vos questions", "veuillez les fomulez en commençant par mon prénom", " Dite altom !"], 'text',['tomato','rebeccapurple','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -24,14 +24,14 @@ function consoleText(words, id, colors) {
         target.setAttribute('style', 'color:' + colors[0])
         letterCount += x;
         waiting = false;
-      }, 1000)
+      }, 900)
     } else if (letterCount === words[0].length + 1 && waiting === false) {
       waiting = true;
       window.setTimeout(function() {
         x = -1;
         letterCount += x;
         waiting = false;
-      }, 1000)
+      }, 900)
     } else if (waiting === false) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
