@@ -22,6 +22,7 @@ body {
   left:0;
   right:0;
   margin:auto;
+  z-index:2;
 }
 .console-underscore {
    display:inline-block;
@@ -38,9 +39,10 @@ body{
   width:100%;
 }
 .ciel, .soleil, .lune, .terre, .etoile span{
-  animation-duration:90s;
-  animation-iteration-count: infinite;
+  animation-duration:60s;
+  animation-iteration-count: 1;
   animation-timing-function:linear;
+  z-index:auto;
 }
 .ciel{
   height:100vh;
@@ -48,16 +50,17 @@ body{
   animation-name:jourNuit;
 }
 .soleil{
-  width:80px;
+  width:85px;
   height:100px;
   background-color:#f39f18;
   border-radius:50%;
   position:absolute;
-  top:70%;
-  left:10%;
+
+  top:100%;
+  left:60%;
   box-shadow: 0px 0px 52px 2px rgba(255,170,0,1);
   animation-name:jour;
-  z-index:2;
+  z-index:1;
 }
 
 .lune{
@@ -70,7 +73,7 @@ body{
   left:80%;
   box-shadow: 0px 0px 30px 0px rgba(250,250,250,1);
   animation-name:nuit;
-  z-index:2;
+  z-index:1;
 }
 
 .etoile span{
