@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Bonjour', "je suis L'intelligence artificiel de Mr Cem", "je répond à toutes vos questions", "veuillez les fomulez en commençant par mon prénom", " Dite altom !"], 'text',['tomato','rebeccapurple','lightblue']);
+consoleText(['Bonjour', "Je suis L'intelligence artificiel de Mr Cem", "Je répond à toutes vos questions", "Veuillez les fomulez en commençant par mon prénom", " Dite : Bonjour Maya  !"], 'text',['blue','lightblue','lightblue', 'lightblue', 'lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -31,7 +31,7 @@ function consoleText(words, id, colors) {
         x = -1;
         letterCount += x;
         waiting = false;
-      }, 900)
+      }, 1000)
     } else if (waiting === false) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
