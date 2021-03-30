@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Bonjour', "Je m'apelle Maya", "Je suis l'intelligence artificiel de Mr Cem", "Je répond à toutes vos questions", "Veuillez les fomulez en commençant par mon prénom", " Dite : Bonjour Maya  !", "....", "....", "Je n'est pas bien compris"], 'text',['blue','blue', 'blue','blue', 'lightblue', 'lightblue', 'lightblue','lightblue']);
+consoleText(['Bonjour', "Je m'apelle Maya", "Je suis l'intelligence artificiel de Mr Cem", "Je répond à toutes vos questions", "Veuillez les fomulez en commençant par mon prénom", " Dite : Bonjour Maya  !", "....", "....", "Je n'est pas bien compris", "Veuillez réessayer !", "....", "Très bien","Je reconnais votre voix","Comment allez-vous ?", "Avez-vous des questions à me posz ?", "Si oui ? dite Bonjour maya !"], 'text',['blue','blue', 'blue','blue', 'lightblue', 'lightblue', 'lightblue','lightblue','lightblue','lightblue','lightblue','lightblue','lightblue','lightblue','lightblue','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
